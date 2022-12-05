@@ -1,2 +1,2 @@
 #!/bin/bash
-Mapoma2021
+id -u -n

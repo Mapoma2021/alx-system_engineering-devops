@@ -17,4 +17,3 @@ else
 fi
     let conter=conter+1
 done
-

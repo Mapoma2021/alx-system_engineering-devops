@@ -1,0 +1,13 @@
+This is what happens when you type “https://www.google.com" in your browser and press Enter. This process involves several steps, so let’s break it down:
+
+DNS Request: When you type the URL into your browser and press Enter, the browser initiates a Domain Name System (DNS) request to translate the human-readable domain name “www.google.com" into an IP address. This involves querying DNS servers to find the IP address associated with the domain.
+TCP/IP: Once the browser has the IP address, it establishes a connection using the Transmission Control Protocol (TCP) and the Internet Protocol (IP). TCP ensures reliable data transmission, and IP handles addressing and routing.
+Firewall: The connection request from your browser might encounter firewalls, which are network security devices that monitor and control incoming and outgoing network traffic. If the connection request passes through, it proceeds to the next step.
+HTTPS/SSL: Google’s website uses HTTPS (HyperText Transfer Protocol Secure), which adds a layer of security to the data being transmitted. The browser and the server perform a TLS (Transport Layer Security) handshake to establish an encrypted connection. This ensures that the data exchanged between your browser and the server remains private and secure.
+Load-Balancer: Google likely employs load balancers to distribute incoming requests across multiple servers. This ensures efficient resource utilization and helps manage high traffic loads.
+Web Server: The request is then forwarded to one of Google’s web servers. The web server’s role is to process the request, retrieve the requested resources (such as HTML, CSS, and JavaScript files), and generate an appropriate response.
+Application Server: In more complex applications, an application server might come into play. It handles dynamic content generation and interacts with databases and other backend services. For Google’s homepage, this step might be relatively simple.
+Database: In some cases, the application server might need to fetch data from a database. However, for a straightforward search engine page like Google’s homepage, database interaction might not be significant.
+Response: The web server or application server generates an HTML page along with any other necessary assets. This response is sent back through the established TCP/IP connection, encrypted with HTTPS.
+Rendering: Finally, your browser receives the response, decrypts it, and renders the web page for you to see and interact with.
+Throughout this process, various technologies and components work together seamlessly to ensure a secure and efficient browsing experience. Each step plays a crucial role in delivering the web page from the server to your browser.
